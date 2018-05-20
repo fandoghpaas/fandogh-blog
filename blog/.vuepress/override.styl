@@ -1,0 +1,32 @@
+// colors
+$accentColor = #0984e3
+
+// disable the search box
+.search-box
+  display none
+
+html, body 
+  direction: rtl  
+.navbar .links
+  left 1.5rem
+  right auto
+
+blockquote 
+  border-right: 0.25rem solid #dfe2e5;
+  border-left: 0 !important;
+  margin-right: 0;
+  padding-right: 1rem;
+
+pre 
+  direction ltr
+
+.sidebar
+  right: 0
+  border-left: 1px solid #eaecef
+
+@media (max-width: 719px)
+  .sidebar {
+      transform: translateX(100%) !important
+  }
+  .sidebar-open .sidebar 
+     transform: translateX(0) !important

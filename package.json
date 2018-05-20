@@ -1,0 +1,21 @@
+{
+  "name": "fandogh-blog",
+  "version": "0.0.1",
+  "description": "Fandogh blog and documents",
+  "author": "Reza Haidari <reza.haidari.a@gmail.com>",
+  "repository": "https://github.com/fandoghpaas/fandogh-blog.git",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^0.8.4"
+  },
+  "dependencies": {
+    "markdown-it": "^8.4.1",
+    "markdown-it-emoji": "^1.4.0",
+    "markdown-it-katex": "^2.0.3"
+  }
+}
