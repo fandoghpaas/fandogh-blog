@@ -20,13 +20,24 @@ blockquote
 pre 
   direction ltr
 
+.page 
+  padding-right 20rem
+  padding-left 0
+
 .sidebar
   right: 0
   border-left: 1px solid #eaecef
 
+@media (max-width: 959px)
+
+  .page 
+    padding-right: 16.4rem;
+
+
 @media (max-width: 719px)
-  .sidebar {
+  .sidebar 
       transform: translateX(100%) !important
-  }
   .sidebar-open .sidebar 
      transform: translateX(0) !important
+  .page
+    padding-right 0
