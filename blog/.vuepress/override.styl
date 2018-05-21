@@ -28,11 +28,16 @@ pre
   right: 0
   border-left: 1px solid #eaecef
 
+.custom-block.tip, .custom-block.warning, .custom-block.danger
+  border-right .5rem solid 
+  border-left 0 solid
+  border-left-width: 0 !important;
+  border-left-style: solid;
+
 @media (max-width: 959px)
 
   .page 
     padding-right: 16.4rem;
-
 
 @media (max-width: 719px)
   .sidebar 
@@ -41,3 +46,7 @@ pre
      transform: translateX(0) !important
   .page
     padding-right 0
+
+@media (min-width: 720px)
+  .theme-container.no-sidebar .page 
+    padding-right 0;
