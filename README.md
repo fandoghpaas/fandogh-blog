@@ -1,5 +1,14 @@
 # Fandogh Blog
 
+Vuepress rtl blog boilerplate
+
+## Development
+
+``` bash
+yarn
+yarn dev # serves VuePress' own docs with itself
+```
+
 ## Credit
 
 [VuePress](https://vuepress.vuejs.org/): Vue-powered Static Site Generator
