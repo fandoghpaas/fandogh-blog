@@ -7,7 +7,6 @@ install:
   - pip install fandogh-cli --upgrade
 # command to run tests
 script:
-  - export FANDOGH_DEBUG=true
   - echo $TRAVIS_COMMIT  
   - fandogh login --username=$FANDOGH_USERNAME --password=$FANDOGH_PASSWORD
   - yarn
