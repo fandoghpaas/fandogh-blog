@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fandoghpaas/fandogh-blog.svg?branch=master)](https://travis-ci.org/fandoghpaas/fandogh-blog)
+
 # Fandogh Blog
 
 Vuepress rtl blog boilerplate
