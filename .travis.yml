@@ -7,4 +7,6 @@ install:
 # command to run tests
 script:
   - export FANDOGH_DEBUG=true
+  - echo $FANDOGH_USERNAME
+  - echo $FANDOGH_PASSWORD
   - fandogh login --username=$FANDOGH_USERNAME --password=$FANDOGH_PASSWORD
