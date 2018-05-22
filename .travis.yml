@@ -10,6 +10,6 @@ script:
   - echo $TRAVIS_COMMIT  
   - fandogh login --username=$FANDOGH_USERNAME --password=$FANDOGH_PASSWORD
   - yarn
-  - yarn dev
+  - yarn build
   - fandogh image publish --version=$TRAVIS_COMMIT 
   - fandogh service deploy --version=$TRAVIS_COMMIT --name=blog
