@@ -11,7 +11,7 @@ module.exports = {
     nav: [
       { text: "خانه", link: "/" },
       { text: "مستندات", link: "/guide/" },
-      { text: "گیتهاب", link: "https://github.com/fandoghpaas/fandogh-blog" }
+      { text: "گیتهاب فندق", link: "https://github.com/fandoghpaas" }
     ],
     sidebar: {
       '/guide/': [
