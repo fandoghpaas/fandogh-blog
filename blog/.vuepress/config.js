@@ -2,8 +2,8 @@ const articles = require('../articles/list.js')
 const guide = require('../guide/list.js')
 
 module.exports = {
-  title: "فندوق",
-  description: "وبلاگ سرویس ابری فندوق",
+  title: "فندق",
+  description: "وبلاگ سرویس ابری فندق",
   head: [["link", { rel: "icon", href: `/logo.png` }]],
   base: "/",
   dest: "./dist",
