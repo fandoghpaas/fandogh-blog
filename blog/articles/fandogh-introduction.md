@@ -77,15 +77,30 @@ Image build logs ....
 <b>توجه:</b> شما با استفاده از دستور ‍`image logs` میتوانید لاگهای خروجی build هر کدام یک از نسخه های تصویر را مشاهده نمایید.
 
 چند مثال:
+```bash
+$ fandogh image logs --version v1
+$ fandogh image logs --image X --version V
+$ fandogh image logs --help
 ```
-fandogh image logs --version v1
-fandogh image logs --image X --version V
-fandogh image logs --help
+
+
+### استقرار وب سایت بر روی فندق
+
+پس از اینکه تصویر شما با موفقیت توسط فندق ساخته شد. شما میتوانید با استفاده از دستور `service deploy` یک سرویس از روی تصویر خود را بر روی فندق مستقر کنید. 
+
+شما میتوانید پارامترهایی مانند متغیرهای محیط و یا پورتی که وب سرور شما بر روی در حال سرویس دهی است را تعریف نمایید.
+
+چند مثال:
+
+* ایجاد یک سرویس از روی نسخه v1 تصویری با نام hello-world با نام hello-word
+```bash
+$ fandogh service deploy --image hello-world --version v1 --name hello-world
 ```
-
-
-
-
-
-
-
+* ایجاد یک سرویس از روی نسخه v1 تصویری با نام hello-world با نام hello-word با فرض اینکه وب سایت بر روی پورت ۸۰۸۰ در حال سرویس دهی است
+```bash
+$ fandogh service deploy --image hello-world --version v1 --name hello-world --port 8080
+```
+* مشاهده help دستور
+```bash
+$ fandogh service deploy --help
+```
