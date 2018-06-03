@@ -2,18 +2,12 @@
 
 # Fandogh Blog
 
-Vuepress rtl blog boilerplate
+This Repository contains source code and blog posts for [Fandogh blog](http://blog.fandogh.cloud/).
 
-## Development
+## Development  
+Fandogh blog has been implemented using [VuePress](https://vuepress.vuejs.org/), another static site generator powered by Vue.
 
 ``` bash
 yarn
 yarn dev # serves VuePress' own docs with itself
 ```
-
-## Credit
-
-[VuePress](https://vuepress.vuejs.org/): Vue-powered Static Site Generator
-
-[Vue.js](https://vuejs.org/): The Progressive JavaScript Framework
-
