@@ -135,3 +135,9 @@ fandogh service deploy --env api_token="some token" --env api_secret_key="some s
 ##### پارامتر‌های لازم      
 **name**        
 از طریق پارامتر name می‌توانید نام serviceای که قصد دارید لاگ آن را مشاهده کنید مشخص کنید.
+
+### دیباگ
+
+شما می‌توانید با ست کردن ‍‍`export FANDOGH_DEBUG=1` حالت debug را فعال کنید تا جزئیات بیشتری از خطا‌ها مشاهده کنید تا در صورت لزوم هنگام
+[ ثبت issue در گیت‌هاب پروژه](https://github.com/fandoghpaas/fandogh-cli/issues)
+ اطلاعات دقیق‌تری فراهم کنید.
