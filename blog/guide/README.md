@@ -143,7 +143,7 @@ fandogh service deploy --env api_token="some token" --env api_secret_key="some s
 
 
 * logs     
-دستور logs ( با دستور `dandogh image logs‍` اشتباه نشود، این دستور زیرمجموعه `service` است) برای نمایش لاگ یک سرویس استفاده می‌شود.
+دستور logs ( با دستور `fandogh image logs‍` اشتباه نشود، این دستور زیرمجموعه `service` است) برای نمایش لاگ یک سرویس استفاده می‌شود.
 
 ##### پارامتر‌های لازم      
 **name**        
