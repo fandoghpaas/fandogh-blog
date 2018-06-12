@@ -29,7 +29,7 @@ Namespace یک فضای اختصاص داده شده به سرویسهای شم�
 هر namespace یک فضای ذخیره‌سازی اختصاصی دارد که تمام سرویس‌های داخل namespace به آن دسترسی دارند. این فضا به طور خودکار به مسیر `mnt/shared-volume/` هر سرویس mount می‌شود.
 
 
-![What is in your namespaces](images/fandogh-namespaces.png "Fandogh namespaces")
+![What is in your namespaces](/guide/fandogh-namespaces.png "Fandogh namespaces")
 
 
 ## جمع‌بندی مفاهیم
