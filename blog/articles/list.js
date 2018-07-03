@@ -13,6 +13,13 @@ module.exports = function () {
             thumbnail: '/articles/dockerfile.png',
             link: '/articles/how-write-docker-file.html',
             date: '۳۰ اردیبهشت ۱۳۹۷',
-        }
+        },
+        {
+            title: 'چطور وردپرس را روی فندق دیپلوی کنیم',
+            description: 'توی این آموزش با هم توی کمتر از ۵ دقیقه یک وردپرس و MySQL رو دیپلوی و راه‌اندازی می‌کنیم',
+            thumbnail: '/articles/Wordpress-MySQL-logo.png',
+            link: '/articles/how-to-deploy-wordpress.html',
+            date: '۱۲ تیر ۱۳۹۷',
+        },
     ]
 }
