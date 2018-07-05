@@ -10,7 +10,7 @@
 ::: tip نکته
 اگر حوصله خوندن ندارید می‌تونید 
  [از این ریپو](https://github.com/fandoghpaas/fandogh-examples/tree/master/wordpress-mysql)
- ریپو استفاده کنید :-D
+ استفاده کنید :-D
 :::
 
 
