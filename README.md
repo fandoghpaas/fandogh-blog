@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.org/fandoghpaas/fandogh-blog.svg?branch=master)](https://travis-ci.org/fandoghpaas/fandogh-blog)
 
 # Fandogh Blog
-
 This Repository contains source code and blog posts for [Fandogh blog](http://blog.fandogh.cloud/).
 
 ## Development  
