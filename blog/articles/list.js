@@ -1,5 +1,20 @@
 module.exports = function () {
     return [
+                {
+            title: 'چطور از دامنه شخصی برای سرویس فندق استفاده کنیم',
+            description: 'توی این آموزش خیلی سریع یک سرویس را با دامنه شخصی راه‌اندازی می‌کنیم',
+            thumbnail: '/articles/custom-domain.jpg',
+            link: '/articles/how-to-use-custom-domain.html',
+            date: '۱ مرداد ۱۳۹۷',
+        },
+
+        {
+            title: 'چطور وردپرس را روی فندق دیپلوی کنیم',
+            description: 'توی این آموزش با هم توی کمتر از ۵ دقیقه یک وردپرس و MySQL رو دیپلوی و راه‌اندازی می‌کنیم',
+            thumbnail: '/articles/Wordpress-MySQL-logo.png',
+            link: '/articles/how-to-deploy-wordpress.html',
+            date: '۱۲ تیر ۱۳۹۷',
+        },
         {
             title: 'معرفی فندق',
             description: 'در واقع فندق سکویی است که سعی در حل کردن چالشهای مختلفی دارد که در زمان استفرار محصول تیمهای توسعه و نگهداری نرم افزار با آنها برخورد میکنند.',
@@ -13,20 +28,7 @@ module.exports = function () {
             thumbnail: '/articles/dockerfile.png',
             link: '/articles/how-write-docker-file.html',
             date: '۳۰ اردیبهشت ۱۳۹۷',
-        },
-        {
-            title: 'چطور وردپرس را روی فندق دیپلوی کنیم',
-            description: 'توی این آموزش با هم توی کمتر از ۵ دقیقه یک وردپرس و MySQL رو دیپلوی و راه‌اندازی می‌کنیم',
-            thumbnail: '/articles/Wordpress-MySQL-logo.png',
-            link: '/articles/how-to-deploy-wordpress.html',
-            date: '۱۲ تیر ۱۳۹۷',
-        },
-        {
-            title: 'چطور از دامنه شخصی برای سرویس فندق استفاده کنیم',
-            description: 'توی این آموزش خیلی سریع یک سرویس را با دامنه شخصی راه‌اندازی می‌کنیم',
-            thumbnail: '/articles/custom-domain.jpg',
-            link: '/articles/how-to-use-custom-domain.html',
-            date: '۱ مرداد ۱۳۹۷',
-        },
+        }
+
     ]
 }
