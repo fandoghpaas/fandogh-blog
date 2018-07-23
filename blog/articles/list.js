@@ -21,5 +21,12 @@ module.exports = function () {
             link: '/articles/how-to-deploy-wordpress.html',
             date: '۱۲ تیر ۱۳۹۷',
         },
+        {
+            title: 'چطور از دامنه شخصی برای سرویس فندق استفاده کنیم',
+            description: 'توی این آموزش خیلی سریع یک سرویس را با دامنه شخصی راه‌اندازی می‌کنیم',
+            thumbnail: '/articles/custom-domain.jpg',
+            link: '/articles/how-to-use-custom-domain.html',
+            date: '۱ مرداد ۱۳۹۷',
+        },
     ]
 }
