@@ -27,7 +27,7 @@ fandogh service deploy --host api.my-domain.com
 ## تنظیم کردن CNAME
 توجه داشته باشید که باید روی دامنه مورد نظر یک CNAME  به آدرس فندق سرویس خود ایجاد کنید.
 مثلا اگر نام سرویس شما some-api  است و نام namespace شما my-company است آدرس فندق سرویس شما
- `some-api-my-company.fandogh.cloud`  می‌شود و
- به یک رکورد CNAME در api.my-domain.com ‌نیاز دارید که به آدرس فندقی اشاره کند.
+ `some-api-my-company.fandogh.cloud` خواهد بود و به یک رکورد CNAME در `api.my-domain.com` ‌نیاز دارید که به آدرس فندقی اشاره کند.
+
 
 
