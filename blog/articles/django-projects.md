@@ -88,4 +88,27 @@ MEDIA_ROOT = os.path.join(PERSISTENT_STORAGE, 'media')
 ```
 حالا کل فایل‌های استاتیک و مدیا رفت توی storageای که مانا هستش و جاش امنه
 
+### استفاده از Environment variables
 
+نکاتی که تا الان گفتیم رو به همون شکلی که توضیح دادیم می‌تونید استفاده کنید، اما بهتر این هستش که یک سری مقادیر که تغییر می‌کنه اینطوری داخل کد نوشته نشه، مثلا HOSTای که برای MySQL استفاده می‌کنید یا USERNAME و PASSWORD بهتر هستش که از environment variables خونده بشه، ما هم توی این آموزش همین کار رو می‌کنیم، مثلا برای MySQL  این تنظیمات رو استفاده می‌کنیم:
+
+```
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ.get("MYSQL_DB_NAME"),
+        'USER': os.environ.get("MYSQL_USERNAME"),
+        'PASSWORD': os.environ.get("MYSQL_PASSWORD"),
+        'HOST': os.environ.get("MYSQL_HOST_NAME"),
+        'PORT': '3306',
+    }
+}
+```
+به این ترتیب ما توی کد هیچ کدام از مقادیر متغیر رو قرار ندادیم و لازمه که موقع دیپلوی سرویس این مقادیر رو در اختیار app  قرار بدیم.
+در مورد مقدار متغیر ‍‍`PERSISTENT_STORAGE`  هم می‌تونیم همین کار رو بکنیم:
+
+```
+PERSISTENT_STORAGE = os.environ.get("PERSISTENT_STORAGE")
+
+```
