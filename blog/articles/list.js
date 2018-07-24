@@ -1,6 +1,12 @@
 module.exports = function () {
     return [
-                {
+        {
+            title: 'چگونه پروژه جنگو را روی فندق دیپلوی کنیم؟',
+            description: 'توی این آموزش قدم به قدم یک پروژه جنگو رو داکرایز می‌کنیم و روی فندق اجرا می‌کنیم',
+            thumbnail: '/articles/django.png',
+            link: '/articles/django-projects.html',
+            date: '۲ مرداد ۱۳۹۷',
+        },{
             title: 'چطور از دامنه شخصی برای سرویس فندق استفاده کنیم',
             description: 'توی این آموزش خیلی سریع یک سرویس را با دامنه شخصی راه‌اندازی می‌کنیم',
             thumbnail: '/articles/custom-domain.jpg',
