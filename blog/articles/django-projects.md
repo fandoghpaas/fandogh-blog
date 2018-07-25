@@ -136,13 +136,17 @@ DATABASES = {
 ```
 پس موقع دیپلوی سرویس این متغیر ها رو باید پاس بدیم:
 ```
-fandogh service deploy \
+fandogh service deploy\
 -e DB_NAME=mydatabase \
 -e DB_USERNAME=root \
 -e DB_PASSWORD=somepassword \
--e DB_HOST=my-database
+-e DB_HOST=my-database\
+--port 8000
 ```
-البته توجه کنید که :
+
+توجه داشته باشید که شما بایدآدرسی را که پس از RUN شدن سرویس خود بر روی سرور فندق به شما داده می شود را در فایل settings.py پروژه خود به عنوان ALLOWED_HOST اضافه کنید.
+
+همچنین توجه کنید که :
 اولا: باید قبلا دیتابیستون به این شکل دیپلوی شده باشه
 ```
 fandogh managed-service deploy mysql 9.1 \
