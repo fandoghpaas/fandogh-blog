@@ -150,7 +150,7 @@ fandogh service deploy\
 فرمت این آدرس به صورت پیش فرض به شکل زیر است:
 
 ```
-YOUR_SERVICE_NAME}-{YOUR_NAMESPACE}.fandogh.cloud 
+{YOUR_SERVICE_NAME}-{YOUR_NAMESPACE}.fandogh.cloud  
 ```
 
 همچنین توجه کنید که:
