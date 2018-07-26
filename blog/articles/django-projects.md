@@ -19,7 +19,7 @@
 این فضا توی آدرس `/mnt/shared-volume` قابل دسترس هستش، کافیه که به جنگو بگید فایل دیتابیس رو اونجا بسازه.
 برای اینکار کافیه توی `settings.py` به این شکل `DATABASE` رو تنظیم کنید:
 ```
-PERSISTENT_STORAGE = "/mnt/shared-storage"
+PERSISTENT_STORAGE = "/mnt/shared-volume"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -27,7 +27,7 @@ DATABASES = {
     }
 }
 ```
-اول یک متغیر تعریف کردیم که حاوی آدرس `/mnt/shared-storage` هستش و بعد هم با به کمک `os.path.join‍‍` مشخص کردیم که محلی که جنگو برای ذخیره دیتابیس باید استفاده کنه باید `/mnt/shared-storage/db.sqlite3` باشه.
+اول یک متغیر تعریف کردیم که حاوی آدرس `/mnt/shared-volume` هستش و بعد هم با به کمک `os.path.join‍‍` مشخص کردیم که محلی که جنگو برای ذخیره دیتابیس باید استفاده کنه باید `/mnt/shared-volume/db.sqlite3` باشه.
 #### نکات مربوط به دیتابیس MySQL
 برای دیتابیس MySQL به طور خاص می‌تونید از قابلیت managed-service استفاده کنید، این قابلیت یک دیتابیس MySQL برای شما ایجاد می‌کنه و با نام‌کاربری و رمزعبوری که انتخاب می‌کنید روی آدرس دلخواه شما در اختیار شما قرار میده.
 برای ساخت یک دیتابیس MySQL باید از fandogh_cli استفاده کنید و می‌تونید روش انجام اینکار رو  **[اینجا](https://github.com/fandoghpaas/fandogh-cli#managed-services)**  مطالعه کنید.
