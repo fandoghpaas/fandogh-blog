@@ -1,6 +1,12 @@
 module.exports = function () {
     return [
         {
+            title: 'namespace and shared storage',
+            description: 'در این بخش سعی میخواهیم برخی قسمت ها مثل Namespace و Storage Model  رو برای شما توضیح دهیم تا با ساختار و نحوه پیاده سازی این مفاهیم بر روی فندق آشنا شوید.',
+            thumbnail: '/articles/shared_storage.png',
+            link: '/articles/namespace-storage.html',
+            date: '۱۳ مرداد ۱۳۹۷',
+        },{
             title: 'چگونه پروژه جنگو را روی فندق دیپلوی کنیم؟',
             description: 'توی این آموزش قدم به قدم یک پروژه جنگو رو داکرایز می‌کنیم و روی فندق اجرا می‌کنیم',
             thumbnail: '/articles/django.png',
