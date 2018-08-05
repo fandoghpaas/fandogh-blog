@@ -14,7 +14,8 @@
 هر Namespace میزبان تعدادی سرویس است که کاربر آن ها را ساخته است. هر سرویس دارای یک آدرس `IP` و یک `service_name` است.
 برای درک چه بهتر موضوع به تصویر زیر توجه کنید.
 
-!(/articles/service_relation.png "Fandogh Network")
+
+![Fandogh Network](/articles/service_relation.png "Fandogh Network")
 
 همانگونه که مشاهده می کنید در این Namespace تعداد 4 سرویس ساخته شده است و فندق به هر سرویس ایجاد شده یک IP اختصاص داده و همینطور هر سرویس دارای مشخصه دیگری به نام `service_name` است.
 مشخصه اصلی برای آنکه سرویس ها همدیگر را پیدا کنند و با هم تعامل داشته باشند `service_name` است.  زیرا که اگر تحت هر شرایطی یکی از سرویس ها Redeploy  شود، IP جدیدی به آن تخصیص داده خواهد شد.
@@ -28,7 +29,8 @@
 
 در فندق نیز هر Namespace دارای DNS Server مختص به خود است که وظیفه ترجمه نام سرویس‌ها به IP سرویس را بر عهده دارد.
 
-!(/articles/dns_namespace.png "Fandogh DNS")
+
+![Fandogh DNS](/articles/dns_namespace.png "Fandogh DNS")
 
 
 ## Storage
@@ -36,7 +38,8 @@
 همانطور که انتظار می رود هر سرویس باید بتواند در فضایی مانا اطلاعات خود را دخبره و بازیابی کند، به همین جهت هر Namepace به همراه یک فضای ذخیره و بازیابی اطلاعاتی ساخته می شود.
 به صورت پیش فرض همه سرویس ها به این فضای اطلاعاتی دسترسی دارند و می توانند عملیات Read و Write  بر روی آن انجام دهند.
 
-!(/articles/shared_storage.png "Fandogh shared-storage")
+
+![Fandogh Storage](/articles/shared_storage.png "Fandogh Storage")
 
 **توجه داشته باشید هر Container دارای یک فضای Storage داخلی است اما استفاده از آن توصیه نمیشود زیرا که این فضا مانا نیست و هر بار که Container از بین برود، اطلاعات شما هم به همراه آن Container از بین می رود.**
  
