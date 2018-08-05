@@ -38,6 +38,7 @@
   
 ![Fandogh Storage](/articles/shared_storage.png "Fandogh Storage")  
   
-::: warning
+::: warning     
 **توجه داشته باشید هر Container دارای یک فضای Storage داخلی است اما استفاده از آن توصیه نمی‌شود زیرا که این فضا مانا نیست و هر بار که Container از بین برود، اطلاعات شما هم به همراه آن Container از بین می‌رود.**
+     
 :::
