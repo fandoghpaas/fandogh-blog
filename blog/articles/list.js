@@ -1,8 +1,8 @@
 module.exports = function () {
     return [
         {
-            title: 'namespace and shared storage',
-            description: 'در این بخش سعی میخواهیم برخی قسمت ها مثل Namespace و Storage Model  رو برای شما توضیح دهیم تا با ساختار و نحوه پیاده سازی این مفاهیم بر روی فندق آشنا شوید.',
+            title: 'Namespace and Storage',
+            description: 'در این پست با مفاهیم Namespace و Storage بر روی فندق بیشتر آشنا خواهید شد',
             thumbnail: '/articles/shared_storage.png',
             link: '/articles/namespace-storage.html',
             date: '۱۳ مرداد ۱۳۹۷',
