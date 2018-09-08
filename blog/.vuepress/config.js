@@ -10,7 +10,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: "خانه", link: "/" },
-      { text: "مستندات", link: "/guide/" },
+      { text: "مستندات", link: "https://docs.fandogh.cloud" },
       { text: "گیتهاب فندق", link: "https://github.com/fandoghpaas" }
     ],
     sidebar: {
