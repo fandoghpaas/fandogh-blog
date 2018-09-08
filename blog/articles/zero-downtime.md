@@ -84,3 +84,64 @@ fandogh service apply -f service-manifest.yml
 
 ![Zero Downtime Deployment step 1](/articles/zero-downtime1.png "Zero Downtime Deployment step 1")  
 
+
+همانطور که در تصویر نیز مشاهده می‌کنید در مقابل replica های سرویس مستقر شده بر روی فندق یک load balancer داخلی اختصاصی ایجاد شده که وظیفه‌اش پخش درخواست‌ها به replica های آماده به پاسخگویی است. 
+
+
+### استقرار نسخه جدید سرویس
+
+در این مرحله قصد داریم نسخه جدید سرویس را بر روی فندق مستقر کنیم. کد مربوط به این نسخه را می‌توانید از این لینک مشاهده نمایید. 
+https://github.com/fandoghpaas/fandogh-examples/tree/master/zero-downtime/v1.1
+
+
+
+بعد از اینکه این نسخه از ایمیج را منتشر کردید با استفاده از این مانیفست میتونید نسخه جدید سرویس را منتشر کنید:
+
+```yaml
+kind: ExternalService
+name: zero-downtime
+spec:
+  image: zero-downtime:v1.1
+  port: 8080
+  replicas: 2
+  readiness_probe:
+    http_get:
+      path: /
+      port: 8080
+    initial_delay_seconds: 10
+    period_seconds: 5
+```
+
+بعد از apply کردن این مراحل بر روی فندق اتفاق خواهد افتاد
+
+### ایجاد یک replica از سرویس
+
+همانطور که در شمای زیر نیز مشاهده می‌کنید در این مرحله یک replica با نسخه جدید ایمیج شما بر روی فندق ایجاد خواهد شد. در این مرحله هنوز ترافیکی توسط load balancer به این سرویس ارسال نمی‌شود و تنها تست آمادگی سرویس جدید فراخوانی می‌شود. مادامی که تست آمادگی این replica که فراخوانی یک http endpoint است چیزی به غیر از http code ۲۰۰ باشد سرویس در این وضعیت می‌ماند.
+
+![Zero Downtime Deployment step 2](/articles/zero-downtime2.png "Zero Downtime Deployment step 2")
+
+
+### پاسخ مثبت به تست آمادگی
+
+پس از اینکه فراخوانی تست آمادگی پاسخ دریافت کرد این نسخه از replica شروع به دریافت ترافیک از load balancer خواهد کرد. همچنین در این لحظه به دلیل اینکه تعداد replica های سرویس شما بیش از تعدادی است که در مانیفست توصیف کرده اید فرایند حذف یکی از نسخه‌های قدیمی سرویس شما از فندق آغاز می‌گردد. 
+
+فرایند حذف شامل این مراحل است:
+
+* لود بالانسر درخواست جدید به این replica ارسال نمی‌کند
+* لود بالانسر صبر می‌کند تا تمام درخواست‌های ارسال شده به سرویس پاسخ داده شده و یا timeout شوند
+* بعد از این دو مرحله replica حذف شده و منابع اختصاص داده شده به آن آزاد می‌شوند
+
+![Zero Downtime Deployment step 3](/articles/zero-downtime3.png "Zero Downtime Deployment step 3")
+
+
+### تکرار مراحل فوق تا به روز شدن تمام replica ها
+
+مراحلی که در بالا تشریح شدند دوباره تکرار خواهند شد تا تمام replica های سرویس مورد نظر به روز شوند. 
+در شماهایی که در ادامه آمده اند این مراحل ترسیم شده‌اند.
+
+
+![Zero Downtime Deployment step 4](/articles/zero-downtime4.png "Zero Downtime Deployment step 4")
+
+![Zero Downtime Deployment step 5](/articles/zero-downtime5.png "Zero Downtime Deployment step 5")
+
+![Zero Downtime Deployment step 6](/articles/zero-downtime6.png "Zero Downtime Deployment step 6")
