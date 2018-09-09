@@ -15,7 +15,7 @@
 
 در فندق تمام مراحل استقرار نسخه جدید سرویس به صورت خودکار صورت می‌گیرد و کاربر تنها نیاز به مانیتور استقرار دارد تا  مطمئن شود  که نسخه جدید بدون مشکل مستقر شده است.
 
-:::     
+::: warning توجه
  حتی در صورت وجود مشکل در نسخه جدید سرویس شما از دسترس خارج نخواهد شد و نسخه قبلی سرویس شما به کاربران سرویس خواهد داد. 
 :::
 
@@ -43,7 +43,7 @@ https://github.com/fandoghpaas/fandogh-examples/tree/master/zero-downtime/v1
 
 
 
-:::   
+::: warning توجه
 توجه داشته باشید که امکان replica تنها برای پلن‌های غیر رایگان فندق قابل استفاده است. اگر کاربر پلن رایگان فندق هستید ‌شما همچنان قادر به استقرار بدون down time ولی با یک replica هستید.
 :::
 
@@ -94,7 +94,6 @@ fandogh service apply -f service-manifest.yml
 
 
 ![Zero Downtime Deployment step 1](/articles/zero-downtime1.png "Zero Downtime Deployment step 1")  
-
 
 همانطور که در تصویر نیز مشاهده می‌کنید در مقابل replica های سرویس مستقر شده بر روی فندق یک load balancer داخلی اختصاصی ایجاد شده که وظیفه‌اش پخش درخواست‌ها به replica های آماده به پاسخگویی است. 
 
@@ -155,6 +154,8 @@ spec:
 
 
 ![Zero Downtime Deployment step 4](/articles/zero-downtime4.png "Zero Downtime Deployment step 4")
+
+
 
 ![Zero Downtime Deployment step 5](/articles/zero-downtime5.png "Zero Downtime Deployment step 5")
 
