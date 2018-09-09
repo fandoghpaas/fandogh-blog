@@ -155,8 +155,54 @@ spec:
 
 ![Zero Downtime Deployment step 4](/articles/zero-downtime4.png "Zero Downtime Deployment step 4")
 
-
+پس از اینکه replica با نسخه جدید آماده شد لودبالانسر شروع بر ارسال بخشی از ترافیک به این replica می‌کنید و به طور همزمان فرایند مورد نیاز برای حذف replica با نسخه قبلی آغاز می‌شود.
 
 ![Zero Downtime Deployment step 5](/articles/zero-downtime5.png "Zero Downtime Deployment step 5")
 
+بعد از اینکه تمام درخواست‌هایی که به replica قدیمی پاسخ داده شده‌اند این replica حذف شده و منابع اختصاص داده شده به آن آزاد می‌شود
+
 ![Zero Downtime Deployment step 6](/articles/zero-downtime6.png "Zero Downtime Deployment step 6")
+
+
+## چند نکته
+
+سعی کنید تا جای ممکن با دستورات CLI فندف آشنا بشید. این دستورات دوستان شما هستند و می‌توانند کمک زیادی به شما کمک کنیید.
+
+برای مثال با استفاده از این دستور در حین استقرار replica جدید می‌توانید اطلاعات ارزشمندی در مورد وضعیت replica هایتان به دست آورید. 
+```bash
+$ fandogh service details --name=zero-downtime
+
+Pods:
+  Name: zero-downtime-7f9bd757-dh2gk
+  Created at: 2018-09-08T11:06:34Z
+  Phase: Running
+  Ready containers: 1/1
+  Containers:
+    Name: zero-downtime
+    Image: registry.fandogh.cloud/default/zero-downtime:v1.1
+    Staus: Ready
+    ---------------------
+  Name: zero-downtime-7f9bd757-l2b5k
+  Created at: 2018-09-08T11:06:52Z
+  Phase: Running
+  Ready containers: 1/1
+  Containers:
+    Name: zero-downtime
+    Image: registry.fandogh.cloud/default/zero-downtime:v1.1
+    Staus: Ready
+    ---------------------
+```         
+
+همینطور شما می‌توانید لاگ سرویس‌هایتان را به صورت آنی مشاهده کنید و نحوه رفتار سرویستان را مورد بررسی قرار دهید.
+
+```bash
+$ fandogh service logs --name=zero-downtime -f 
+[zero-downtime-7f9bd757-dh2gk] [zero-downtime] -> Running on http://localhost:8080
+[zero-downtime-7f9bd757-l2b5k] [zero-downtime] -> Running on http://localhost:8080
+
+```
+برای آشنایی بیشتر با دستورات فندق می‌توانید
+ [مستندات فندق](
+https://docs.fandogh.cloud/docs/getting-started.html
+ )
+را مطالعه کنید.
