@@ -1,18 +1,26 @@
 module.exports = function () {
     return [
         {
+            title: 'Zero Downtime Deployment',
+            description: 'در این پست به تشریح فرایند استقرار نسخه‌های جدید یک سرویس بر روی فندق می‌پردازیم. این مطالب به شما کمک خواهد کرد تا با مفهوم Zero downtime Deployment بیشتر آشنا شوید. همچنین برای اینکه فندق بتواند این نوع استقرار را به درستی انجام  دهد تنظیماتی از جانب کاربران مورد نیاز است که در این پست به تشریح آنها نیز خواهیم پرداخت.\n',
+            thumbnail: '/articles/zero-downtime.png',
+            link: '/articles/zero-downtime.html',
+            date: '۱۸ شهریور ۱۳۹۷'
+
+        },
+        {
             title: 'Namespace and Storage',
             description: 'در این پست با مفاهیم Namespace و Storage بر روی فندق بیشتر آشنا خواهید شد',
             thumbnail: '/articles/shared_storage.png',
             link: '/articles/namespace-storage.html',
             date: '۱۳ مرداد ۱۳۹۷',
-        },{
+        }, {
             title: 'چگونه پروژه جنگو را روی فندق دیپلوی کنیم؟',
             description: 'توی این آموزش قدم به قدم یک پروژه جنگو رو داکرایز می‌کنیم و روی فندق اجرا می‌کنیم',
             thumbnail: '/articles/django.png',
             link: '/articles/django-projects.html',
             date: '۲ مرداد ۱۳۹۷',
-        },{
+        }, {
             title: 'چطور از دامنه شخصی برای سرویس فندق استفاده کنیم',
             description: 'توی این آموزش خیلی سریع یک سرویس را با دامنه شخصی راه‌اندازی می‌کنیم',
             thumbnail: '/articles/custom-domain.jpg',
