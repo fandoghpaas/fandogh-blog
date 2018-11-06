@@ -10,3 +10,4 @@ Fandogh blog has been implemented using [VuePress](https://vuepress.vuejs.org/),
 yarn
 yarn dev # serves VuePress' own docs with itself
 ```
+
