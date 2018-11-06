@@ -2,7 +2,7 @@ const articles = require('../articles/list.js')
 const guide = require('../guide/list.js')
 
 module.exports = {
-  title: "فندق",
+  title: "پلتفرم فندق",
   description: "وبلاگ سرویس ابری فندق",
   head: [["link", { rel: "icon", href: `/logo.png` }]],
   base: "/",
