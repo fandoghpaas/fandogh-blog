@@ -1,6 +1,13 @@
 module.exports = function () {
     return [
         {
+            title: 'اولین کارگاه فندق',
+            description: 'در اولین کارگاه فندق دوستان زیادی به ما اعتماد کردند و تشریف آوردن و تونستیم با هم تو یه محیط علمی و در عین حال به دور از پیچیدگی ها و جدیت‌های بیجا و معمول از داکر تا فندق رو پوشش بدیم و به صورت عملی از محصول فندق استفاده کنیم.',
+            thumbnail: '/articles/workshop_thumb.png',
+            link: '/articles/workshop-28-10-2018.html',
+            date: '۱۶ آبان ۱۳۹۷',
+        },
+        {
             title: 'Zero Downtime Deployment',
             description: 'در این پست به تشریح فرایند استقرار نسخه‌های جدید یک سرویس بر روی فندق می‌پردازیم. این مطالب به شما کمک خواهد کرد تا با مفهوم Zero Downtime Deployment بیشتر آشنا شوید. همچنین برای اینکه فندق بتواند این نوع استقرار را به درستی انجام  دهد تنظیماتی از جانب کاربران مورد نیاز است که در این پست به تشریح آنها نیز خواهیم پرداخت.\n',
             thumbnail: '/articles/zero-downtime.png',
@@ -48,13 +55,6 @@ module.exports = function () {
             thumbnail: '/articles/dockerfile.png',
             link: '/articles/how-write-docker-file.html',
             date: '۳۰ اردیبهشت ۱۳۹۷',
-        },
-        {
-            title: 'اولین کارگاه فندق',
-            description: 'در اولین کارگاه فندق دوستان زیادی به ما اعتماد کردند و تشریف آوردن و تونستیم با هم تو یه محیط علمی و در عین حال به دور از پیچیدگی ها و جدیت‌های بیجا و معمول از داکر تا فندق رو پوشش بدیم و به صورت عملی از محصول فندق استفاده کنیم.',
-            thumbnail: '/articles/workshop_thumb.png',
-            link: '/articles/workshop-28-10-2018.html',
-            date: '۱۶ آبان ۱۳۹۷',
         }
 
     ]
