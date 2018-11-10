@@ -48,6 +48,13 @@ module.exports = function () {
             thumbnail: '/articles/dockerfile.png',
             link: '/articles/how-write-docker-file.html',
             date: '۳۰ اردیبهشت ۱۳۹۷',
+        },
+        {
+            title: 'اولین کارگاه فندق',
+            description: 'در اولین کارگاه فندق دوستان زیادی به ما اعتماد کردند و تشریف آوردن و تونستیم با هم تو یه محیط علمی و در عین حال به دور از پیچیدگی ها و جدیت‌های بیجا و معمول از داکر تا فندق رو پوشش بدیم و به صورت عملی از محصول فندق استفاده کنیم.',
+            thumbnail: '/articles/workshop_thumb.png',
+            link: '/articles/workshop-28-10-2018.html',
+            date: '۲۲ مهر ۱۳۹۷',
         }
 
     ]
