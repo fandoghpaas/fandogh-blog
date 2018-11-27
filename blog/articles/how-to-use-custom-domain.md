@@ -18,7 +18,7 @@ $ fandogh domain add --name api.my-domain.com
 
 deploy سرویس روی دامنه مورد نظر مثل deploy هر سرویس دیگری است تنها کافیست از سوئیچ `host—-` استفاده کنید:
 ```
-fandogh service deploy --host api.my-domain.com
+fandogh service deploy --hosts api.my-domain.com
 
 ```
 
