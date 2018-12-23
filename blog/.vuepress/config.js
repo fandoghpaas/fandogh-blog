@@ -1,4 +1,5 @@
-const articles = require('../articles/list.js')
+const articles = require('../articles/home.vue')
+// const articles = require('../articles/list.js')
 const guide = require('../guide/list.js')
 
 module.exports = {
