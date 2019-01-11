@@ -71,8 +71,8 @@ fandogh managed-service deploy mysql 9.4 -c service_name=my-database -c phpmyadm
 یک فایل به نام `Dockerfile` بسازید و تنها چیزی که لازمه داخلش بنویسید همینه:
 ```
 FROM wordpress
-
-```با اینکار ما یک Image کاملا مشابه با Image اصلی وردپرس ساختیم و از همون استفاده می‌کنیم، توضیحات مربوط به image اصلی وردپرس رو می‌توانید [اینجا](https://hub.docker.com/_/wordpress/) مشاهده کنید
+```
+با اینکار ما یک Image کاملا مشابه با Image اصلی وردپرس ساختیم و از همون استفاده می‌کنیم، توضیحات مربوط به image اصلی وردپرس رو می‌توانید [اینجا](https://hub.docker.com/_/wordpress/) مشاهده کنید
 حالا در حالی که داخل اون Directory هستید باید فقط یک فایل داشته باشید به نام Dockerfile  با محتویاتی که بالاتر اشاره کردم، الان کافیه که اول image هاتون را روی فندق init کنید و بعد هم ورژن بزنید و publish کنید:
 
 ```
@@ -100,7 +100,7 @@ fandogh image versions
 * WORDPRESS_DB_PASSWORD
 * WORDPRESS_DB_NAME
 
-ما می‌تونیم موقع deploy سرویس این پارامتر‌ها را هم از طریق `-e` ست کنیم بنابر این کامندی که اجرا می‌کنیم میشه این:
+ما می‌تونیم موقع deploy سرویس این پارامتر‌ها را هم از طریق `e-` ست کنیم بنابر این کامندی که اجرا می‌کنیم میشه این:
 
 ```
 fandogh service deploy -e WORDPRESS_DB_HOST=my-database -e WORDPRESS_DB_USER=root -e WORDPRESS_DB_PASSWORD=somepassword -e WORDPRESS_DB_NAME=wp
@@ -115,8 +115,8 @@ Your service name: mywp
 Your service deployed successfully.
 The service is accessible via following link:
 http://[YOUR-SERVICE-NAME].[YOUR-NAMESPACE].fandogh.cloud
-
 ```
+
 اگر به آدرس بالا مراجعه کنید با صفحه نصب wordpress مواجه میشید و این یعنی سرویس وردپرس شما آماده است.
 
 
