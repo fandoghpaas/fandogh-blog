@@ -1,6 +1,13 @@
 module.exports = function () {
     return [
         {
+            title: 'چرخه CI/CD با استفاده از گیت‌لب و فندق',
+            description: 'در این بلاگ پست با هم قدم‌ به فدم یک چرخه CI/CD با استفاده از گیت‌لب و فندق راه‌اندازی می‌کنیم',
+            thumbnail: '/articles/gitlab-ci-cd-logo.png',
+            link: '/articles/how-to-gitlab-ci.html',
+            date: '۱۹ بهمن ۱۳۹۷'
+        },
+        {
             title: 'Namespace and Storage',
             description: 'در این پست با مفاهیم Namespace و Storage بر روی فندق بیشتر آشنا خواهید شد',
             thumbnail: '/articles/shared_storage.png',
