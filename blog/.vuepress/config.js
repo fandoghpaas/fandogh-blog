@@ -2,7 +2,7 @@ const articles = require('../articles/list.js')
 const guide = require('../guide/list.js')
 
 module.exports = {
-  title: "فندق",
+  title: "پلتفرم فندق",
   description: "وبلاگ سرویس ابری فندق",
   head: [["link", { rel: "icon", href: `/logo.png` }]],
   base: "/",
@@ -10,7 +10,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: "خانه", link: "/" },
-      { text: "مستندات", link: "/guide/" },
+      { text: "مستندات", link: "https://docs.fandogh.cloud" },
       { text: "گیتهاب فندق", link: "https://github.com/fandoghpaas" }
     ],
     sidebar: {
