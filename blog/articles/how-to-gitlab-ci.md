@@ -113,10 +113,10 @@ python manage.py test
 #!/bin/bash
 fandogh service apply \
  -f ../fandogh-manifests/service-manifest.yaml \
- -p IMAGE_URL" \
- -p TAG" \
- -p SEC_NAME" \
- -p API_KEY"
+ -p IMAGE_URL \
+ -p TAG \
+ -p SEC_NAME \
+ -p API_KEY
 ```
 این اسکریپ مطابق مانیفستی که برای مثال در قدم دوم آماده کردیم نوشته شده، همون طور که می‌بینید از طریق `p-` پارامتر‌های مورد نیاز مانیفست مشخص شده‌اند.
 ما می‌توانیم در تنظیمات پنل gitlab-ci تمام پارامترهایی که در بالا استفاده کردیم را فراهم کنیم تا در زمان اجرا در envای که اسکریپت در آن اجرا می‌شود وجود داشته باشند، و همان طور که [در مستندات قید شده](https://docs.fandogh.cloud/docs/service-manifest.html#%D9%82%D8%A7%D8%A8%D9%84%DB%8C%D8%AA-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D8%A7%D8%B2-%D9%85%D8%AA%D8%BA%DB%8C%D8%B1-%D8%AF%D8%B1-manifest) fandogh cli در صورتی که این پارامتر‌ها را در env پیدا کنید استفاده می‌کند.
