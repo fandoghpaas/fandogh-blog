@@ -64,7 +64,7 @@ name: hello-world
 spec:
   image: ${IMAGE_URL}:${TAG}
   image_pull_policy: Always
-  image_pull_secret: "${SEC_NAME}"
+  image_pull_secret: $SEC_NAME
   env:
     - name: DEBUG
       value: 1
@@ -96,6 +96,8 @@ spec:
  2. برای دیپلوی کردن پروژه: `deployment/scripts/deploy-to-fandogh.sh`
 
 > این اسکریپت‌ها حین اجرا ممکن است نیاز به یک‌سری پارامتر داشته باشند، نگران نباشید این موضوع را جلوتر توضیح میدهیم.
+> 
+> توجه داشته باشید این اسکریپت‌ها باید executable باشند، می‌توانید با دستور `chmod` آنها رو قابل اجرا کنید.
 
 برای اسکریپت تست باید با توجه به تست فریمورکی که استفاده می‌کنید(استفاده می‌کنید؟) اسکریپت مورد نیاز را بنویسید.
 مثلا برای لاراول اگر از PhpUnit استفاده می‌کنید می‌توانید به این شکل اسکریپت رو بنویسید:
@@ -146,7 +148,7 @@ test:
 		ENV_VAR3: VALUE3  
 	script:  
 		- pip install -r test-requirements.txt  
-		- deployment/scripts/run-tests.sh  
+		- deployment/scripts/run-tests.sh/.  
 	only:  
 		- develop
 ```
@@ -200,7 +202,7 @@ deploy:
 	script:  
 		- pip install fandogh_cli --upgrade  
 		- fandogh login --username $FAN_USR --password $FAN_PASS  
-		- deployment/scripts/deploy-to-fandogh.sh  
+		- deployment/scripts/deploy-to-fandogh.sh/.  
 	only:  
   - develop
 ```
@@ -240,7 +242,7 @@ push:
 	services:
 		- docker:dind
 	script:
-		- docker login -u $CI_DEPLOY_USER -p $CI_DEPLOY_PASSWORD $CI_REGISTRY
+		- docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
 		- docker build --pull -t $IMAGE_URL:$TAG .
 		- docker push $IMAGE_URL:$TAG
   only:
@@ -250,12 +252,12 @@ push:
 deploy:
 	stage: deploy
 	image: python:3.5
-	variables:
+	variables:	
 		COLLECT_ERROR: 1
 	script:
 		- pip install fandogh_cli --upgrade
 		- fandogh login --username $FAN_USR --password $FAN_PASS
-		- deployment/scripts/deploy-to-fandogh.sh
+		- deployment/scripts/deploy-to-fandogh.sh/.
 	only:
 		- develop
 
