@@ -148,7 +148,7 @@ test:
 		ENV_VAR3: VALUE3  
 	script:  
 		- pip install -r test-requirements.txt  
-		- deployment/scripts/run-tests.sh/.  
+		- ./deployment/scripts/run-tests.sh
 	only:  
 		- develop
 ```
@@ -202,7 +202,7 @@ deploy:
 	script:  
 		- pip install fandogh_cli --upgrade  
 		- fandogh login --username $FAN_USR --password $FAN_PASS  
-		- deployment/scripts/deploy-to-fandogh.sh/.  
+		- ./deployment/scripts/deploy-to-fandogh.sh 
 	only:  
   - develop
 ```
@@ -257,7 +257,7 @@ deploy:
 	script:
 		- pip install fandogh_cli --upgrade
 		- fandogh login --username $FAN_USR --password $FAN_PASS
-		- deployment/scripts/deploy-to-fandogh.sh/.
+		- ./deployment/scripts/deploy-to-fandogh.sh
 	only:
 		- develop
 
