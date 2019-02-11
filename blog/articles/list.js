@@ -2,7 +2,7 @@ module.exports = function () {
     return [
         {
             title: 'چرخه CI/CD با استفاده از گیت‌لب و فندق',
-            description: 'در این بلاگ پست با هم قدم‌ به فدم یک چرخه CI/CD با استفاده از گیت‌لب و فندق راه‌اندازی می‌کنیم',
+            description: 'در این بلاگ پست با هم قدم‌ به قدم یک چرخه CI/CD با استفاده از گیت‌لب و فندق راه‌اندازی می‌کنیم',
             thumbnail: '/articles/gitlab-ci-cd-logo.png',
             link: '/articles/how-to-gitlab-ci.html',
             date: '۱۹ بهمن ۱۳۹۷'
