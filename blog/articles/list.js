@@ -3,7 +3,7 @@ module.exports = function () {
         {
             title: 'زیرساخت ابری به زبان ساده',
             description: 'در این پست تلاش کردیم به صورت خلاصه زیرساخت‌های ابری رو برای عموم توضیح بدیم.',
-            thumbnail: '/articles/fandogh-idon.jpg',
+            thumbnail: '/articles/fandogh-icon.jpg',
             link: '/articles/cloud-infra-simple.html',
             date: '۱۸ بهمن ۱۳۹۸'
         },
