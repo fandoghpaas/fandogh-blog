@@ -1,6 +1,13 @@
 module.exports = function () {
     return [
         {
+            title: 'زیرساخت ابری به زبان ساده',
+            description: 'در این پست تلاش کردیم به صورت خلاصه زیرساخت‌های ابری رو برای عموم توضیح بدیم.',
+            thumbnail: '/articles/fandogh-idon.jpg',
+            link: '/articles/cloud-infra-simple.html',
+            date: '۱۸ بهمن ۱۳۹۸'
+        },
+        {
             title: 'چرخه CI/CD با استفاده از گیت‌لب و فندق',
             description: 'در این بلاگ پست با هم قدم‌ به قدم یک چرخه CI/CD با استفاده از گیت‌لب و فندق راه‌اندازی می‌کنیم',
             thumbnail: '/articles/gitlab-ci-cd-logo.png',
