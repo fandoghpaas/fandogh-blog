@@ -12,6 +12,7 @@ install:
 script:
   - echo $TRAVIS_COMMIT  
   - fandogh login --username=$FANDOGH_USERNAME --password=$FANDOGH_PASSWORD
+  - fandogh namespace active --name default
   - yarn
   - yarn build
   - fandogh image publish --version=$TRAVIS_COMMIT 
