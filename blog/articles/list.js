@@ -1,6 +1,13 @@
 module.exports = function () {
     return [
         {
+            title: 'داستان یک تصمیم سخت',
+            description: 'در این پست در مورد یکی از تصمیمات سخت سکوی ابری فندق با شما صحبت خواهیم کرد.',
+            thumbnail: '/articles/fandoghpaas-community-banner.png',
+            link: '/articles/hard-desicion.html',
+            date: '۱۲ آبان ۱۳۹۹'
+        },
+        {
             title: 'زیرساخت ابری به زبان ساده',
             description: 'در این پست تلاش کردیم به صورت خلاصه زیرساخت‌های ابری رو برای عموم توضیح بدیم.',
             thumbnail: '/articles/fandogh-icon.jpg',
