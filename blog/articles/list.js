@@ -4,7 +4,7 @@ module.exports = function () {
             title: 'داستان یک تصمیم سخت',
             description: 'در این پست در مورد یکی از تصمیمات سخت سکوی ابری فندق با شما صحبت خواهیم کرد.',
             thumbnail: '/articles/fandoghpaas-community-banner.png',
-            link: '/articles/hard-desicion.html',
+            link: '/articles/hard-decision.html',
             date: '۱۲ آبان ۱۳۹۹'
         },
         {
